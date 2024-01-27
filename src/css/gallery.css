@@ -1,0 +1,23 @@
+.gallery {
+  padding: 100px 156px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.gallery-item {
+  list-style-type: none;
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-image {
+  max-width: 370px;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+}
