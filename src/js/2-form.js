@@ -39,17 +39,17 @@ function onFormInput() {
 }
 
 function saveToLS(key, value) {
-  const arhiv = JSON.stringify(value);
-  localStorage.setItem(key, arhiv);
+  const serializedData = JSON.stringify(value);
+  localStorage.setItem(key, serializedData);
 }
 
 function loadFromLS(key) {
-  const arhiv = localStorage.getItem(key);
+  const serializedData = localStorage.getItem(key);
 
   try {
-    return JSON.parse(arhiv);
+    return JSON.parse(serializedData);
   } catch {
-    return arhiv;
+    return serializedData;
   }
 }
 
