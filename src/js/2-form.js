@@ -49,7 +49,7 @@ function loadFromLS(key) {
   try {
     return JSON.parse(serializedData);
   } catch {
-    return serializedData;
+    return null;
   }
 }
 
